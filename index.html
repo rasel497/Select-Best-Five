@@ -40,8 +40,8 @@
 
     <!-------------main start-------------->
     <main class="py-5 bg-dark">
-        <div class="container mt-5">
-            <section class="row">
+        <section class="container mt-5">
+            <div class="row">
                 <!--players cards section start  -->
                 <section class="col-md-9">
                     <div class="d-flex flex-wrap">
@@ -128,6 +128,48 @@
                     </div>
                 </section>
                 <!-- cards section end -->
+
+                <!-- player and budget section start  -->
+                <section class="col-md-3 text-white ">
+                    <!-- player list section -->
+                    <div class="bg-black mt-2 p-3 player-list border rounded">
+                        <h3 class="text-center text-decoration-underline fw-bold">Selected - V</h3>
+                        <hr>
+                        <ol id="selected-player-list" class="fs-3 text-light"></ol>
+                    </div>
+                    <!-- team budget section -->
+                    <div class="bg-black mt-4 p-4 border rounded">
+                        <h3 class="text-center text-decoration-underline fw-bold">Budget</h3>
+                        <hr>
+                        <p class="d-flex align-items-center justify-content-between mt-3"><span
+                                class="fs-5 text-gray">Per Player</span> <input id="per-player-expenses"
+                                class="bg-transparent border w-50 fs-5 text-white p-2" type="text" name="" id=""></p>
+
+                        <button id="calculate-btn" type="button"
+                            class="btn btn-primary w-100 btn-block mt-2">Calculate</button>
+
+                        <p class="fs-5 text-gray mt-3"><span class="me-4">Player Expenses</span> $<span
+                                id="total-player-expenses">00</span></p>
+
+                        <p class="d-flex align-items-center justify-content-between mt-2"><span
+                                class="fs-5 text-gray">Manager</span> <input id="manager-expenses"
+                                class="bg-transparent border w-50 fs-5 text-white p-2" type="text" name="" id=""></p>
+
+                        <p class="d-flex align-items-center justify-content-between mt-2"><span
+                                class="fs-5 text-gray">Coach</span> <input id="coach-expenses"
+                                class="bg-transparent border w-50 fs-5 text-white p-2" type="text" name="" id=""></p>
+
+                        <button id="calculate-total-btn" type="button"
+                            class="btn btn-primary w-100 btn-block mt-2">Calculate Total</button>
+
+                        <p class="fs-4 d-flex justify-content-between text-gray mt-3"><span class="me-4">Total</span>
+                            <span class="text-warning">$<span id="total-expenses">00</span></span>
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+        </section>
     </main>
 
     <!-- js link -->
